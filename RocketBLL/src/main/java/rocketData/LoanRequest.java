@@ -6,12 +6,20 @@ public class LoanRequest implements Serializable {
 
 	private int iTerm;
 	private double dRate;
+	public void setdIncome(double dIncome) {
+		this.dIncome = dIncome;
+	}
+	public void setdExpenses(double dExpenses) {
+		this.dExpenses = dExpenses;
+	}
 	private double dAmount;
 	private int iCreditScore;
 	private int iDownPayment;
 	private double dPayment;
+	private double dIncome;
+	private double dExpenses;
 	
-	//	TODO - RocketBLL.LoanRequest
+	//RocketBLL.LoanRequest
 	//			missing attributes...
 	//			Income
 	//			Expenses
@@ -55,6 +63,12 @@ public class LoanRequest implements Serializable {
 	}
 	public void setdPayment(double dPayment) {
 		this.dPayment = dPayment;
+	}
+	public double getdIncome() {
+		return dIncome;
+	}
+	public double getdExpenses() {
+		return dExpenses;
 	}
 	
 	
